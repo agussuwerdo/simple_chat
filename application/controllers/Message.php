@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Message extends CI_Controller {
 
 	public function index(){
-	
+		// testing commit
 		$data['message'] = $this->db->select('*')->from('message')->order_by('id','desc')->get();
 		$this->load->view('message',$data);
 	
