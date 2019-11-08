@@ -7,7 +7,7 @@ class Message extends CI_Controller {
 		// testing commit
 		$data['message'] = $this->db->select('*')->from('message')->order_by('id','desc')->get();
 		$this->load->view('message',$data);
-	
+		// commit is good
 	}
 
 	public function detail(){
